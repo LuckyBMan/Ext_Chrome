@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Idle Reminder",
+  "version": "1.0",
+  "description": "Nhắc nhở khi người dùng không tương tác!",
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "exclude_matches": ["https://kimlonggps.com/*","https://docs.google.com/spreadsheets/**"],
+      "js": ["content.js"]
+    }
+  ]
+}
